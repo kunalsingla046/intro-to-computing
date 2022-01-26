@@ -15,7 +15,7 @@ substring = "a"
 # finding "a" when it first occurred in substring
 print("index of substring  is %s" % given_string.find(substring))
 print("f part")
-print("string without space is %s" % given_string.replace(" "," "))
+print("string without space is %s" % given_string.replace(" ",""))
 
 print()
 print()
