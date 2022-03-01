@@ -61,55 +61,63 @@ for j in range(1, n+1):
 print("\nques 3")
 
 num1=int(input("Enter the first no.:"))
-num2=int(input("enter the second no.:"))
+while True:
+    num2=int(input("enter the second no.:"))
 #let a= quotient, b=remainder
-if num2!=0:
-    a,b=divmod(num1,num2)
-
-    print("a part")
-    print("function is callable")
-    print(f"the quotient is {a} and remainder is {b}\n")
-
-    print()
-
-    print("b part")
-    if b==0:
-        print("remainder is zero")
+    if num2!=0:
+        break
     else:
-        print("remainder is non zero")
-    if a==0:
-        print("quotient is zero")
-    else:
-        print("quotient is non zero")
-    print()
-    print("c part")
+        print("num 2 can't be 0 ; Enter again")
 
-    new = (a , b) + (4, 5, 6)
-    result = []
-    for i in range(len(new)):
-        if new[i] > 4:
-            result.append(new[i])
-    print(f" Filtered out numbers greater than 4: {result}")
-    print()
+a,b=divmod(num1,num2)
+print(f"the quotient is {a} and remainder is {b}\n")
 
-    print("d part")
-    result_set=set(result)
-    print(f"the set is {result_set}")
-    print()
-
-    print("e part")
-    set_immutable=frozenset(result_set)
-    print(f"the immutable set is {set_immutable}")
-    print()
-
-    print("f part")
-    #let c=maximum value of set
-    c=max(set_immutable)
-    #d=hash value
-    d=hash(c)
-    print(f"the hash value of the max value from above set is {d}")
+print("a part") # checking callability
+c=callable(divmod)
+print(c,end="")
+if c== True:
+    print(";function is callable")
 else:
-    print("the function is not callable")    
+    print(";function is not callable")
+print()
+
+print("b part")
+if b==0:
+    print("remainder is zero")
+else:
+    print("remainder is non zero")
+if a==0:
+    print("quotient is zero")
+else:
+    print("quotient is non zero")
+print()
+print("c part")
+
+new = (a , b) + (4, 5, 6)
+result = []
+for i in range(len(new)):
+    if new[i] > 4:
+         result.append(new[i])
+print(f" Filtered out numbers greater than 4: {result}")
+print()
+
+print("d part")
+result_set=set(result)
+print(f"the set is {result_set}")
+print()
+
+print("e part")
+set_immutable=frozenset(result_set)
+print(f"the immutable set is {set_immutable}")
+print()
+
+print("f part")
+#let c=maximum value of set
+c=max(set_immutable)
+#d=hash value
+d=hash(c)
+print(f"the hash value of the max value from above set is {d}")
+   
 print()
 print()
 
