@@ -63,12 +63,12 @@ print("\nques 3")
 num1=int(input("Enter the first no.:"))
 while True:
     num2=int(input("enter the second no.:"))
-#let a= quotient, b=remainder
+
     if num2!=0:
         break
     else:
         print("num 2 can't be 0 ; Enter again")
-
+#let a= quotient,b = remainder
 a,b=divmod(num1,num2)
 print(f"the quotient is {a} and remainder is {b}\n")
 
