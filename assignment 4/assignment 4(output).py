@@ -51,6 +51,7 @@ the immutable set is frozenset({5, 6})
 f part
 the hash value of the max value from above set is 6
 
+
 ques 4
 Object created
 
