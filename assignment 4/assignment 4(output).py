@@ -30,10 +30,10 @@ using iteratives
 ques 3
 Enter the first no.:15
 enter the second no.:10
-a part
-function is callable
 the quotient is 1 and remainder is 5
 
+a part
+True;function is callable
 
 b part
 remainder is non zero
@@ -50,7 +50,6 @@ the immutable set is frozenset({5, 6})
 
 f part
 the hash value of the max value from above set is 6
-
 
 ques 4
 Object created
